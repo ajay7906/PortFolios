@@ -1,0 +1,741 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    background-color: black;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid aqua;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+}
+
+.image span {
+    color: skyblue;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+
+.image h3 {
+    position: relative;
+    top: -23px;
+    left: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.middle ul {
+    margin-top: 25px;
+    margin-left: 1rem;
+}
+
+.middle ul li {
+    list-style: none;
+
+    margin-left: 1.5rem;
+}
+
+.middle ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.middle a:hover {
+    color: aqua;
+}
+
+.right button {
+    padding: 6px 25px;
+    color: white;
+    background-color: aqua;
+    border: none;
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+.right button:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.middle-img {
+    color: white;
+    width: 45%;
+
+}
+
+figure {
+    width: 40%;
+    margin-top: -1rem;
+    height: 80%;
+}
+
+figure img {
+    width: 100%;
+}
+
+.middle-img h2 {
+    color: white;
+    font-size: 35px;
+    margin: 0;
+
+    text-shadow: 5px 5px 5px green;
+}
+
+.middle-img h1 {
+    font-size: 35px;
+    margin-top: 0px;
+    text-shadow: 5px 5px 5px green;
+    animation: ajay 3s linear 2s infinite;
+    animation-delay: 2s;
+}
+
+
+.middle-img span {
+    color: aqua;
+
+}
+
+
+
+section .about-container {
+    margin-top: 3rem;
+    border: 2px solid aqua;
+    background-color: white;
+}
+
+section .about-container figure {
+    width: 40%;
+}
+
+section .about-container figure img {
+    width: 100%;
+    position: relative;
+    top: 15px;
+    left: -40px;
+}
+
+section .about-info {
+    width: 45%;
+    margin: 0 auto;
+
+}
+
+section .about-info h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+section .about-info h1 span {
+    color: aqua;
+}
+
+section .about-info h3 {
+    margin: 0;
+}
+
+section .about-info p {
+    color: gray;
+    margin: 0;
+}
+
+.about-info .social {
+    font-size: 20px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
+
+}
+
+.about-info .social span {
+    background-color: black;
+    padding: 15px 15px;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.about-info .social span:hover {
+    background-color: skyblue;
+}
+
+section .section-3 {
+    text-align: center;
+}
+
+section.services {
+    margin-top: 5rem;
+
+    width: 72%;
+
+}
+
+.head span {
+    color: aqua;
+}
+
+.section-3 .provide-services {
+    display: grid;
+    padding-top: 4rem;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+}
+
+.section-3 .provide-services .provide-box {
+    background-color: white;
+
+
+}
+
+.section-3 .provide-services .provide-box span {
+    position: relative;
+    font-size: 2.3rem;
+    top: -1.4rem;
+    background-color: aqua;
+    padding: 1rem 1rem;
+}
+
+.provide-box h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.provide-box p {
+    color: gray;
+    margin: 0;
+
+}
+
+.provide-services .provide-box:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.provide-box p:hover {
+    color: white;
+}
+
+section.section-4 {
+    background-image: url("../images/camera.png");
+    text-align: center;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .7) rgba(0, 0, 0, .7));
+    color: white;
+
+
+    margin-top: 6rem;
+
+
+
+}
+
+.section-4-but {
+    padding-bottom: 2rem;
+}
+
+.section-4 h1 {
+    padding-top: 4rem;
+    font-size: 2rem;
+
+
+}
+
+.section-4 p {
+    color: silver;
+}
+
+section.section-5 {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.section-5 h2 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.section-5 span {
+    color: aqua;
+}
+
+.section-5 p {
+    color: gray;
+
+}
+
+.section-5 .slider .slider-middle {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+
+}
+
+.section-5 .slider .slider-middle img {
+    width: 30%;
+    object-fit: cover;
+    padding-top: 1.5rem;
+}
+
+.section-5 .slider-dots .dots {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.section-5 .slider-dots .dots button {
+    font-size: 0;
+    width: 15px;
+    margin-right: 0.3rem;
+    height: 10px;
+    border: none;
+    outline: none;
+    background-color: gray;
+    border-radius: 50px;
+}
+
+section.section-5 .dots li.slick-active button {
+    background-color: aqua;
+
+    border-radius: 50px;
+    width: 25px;
+}
+
+section.section-6 {
+    background-color: white;
+    text-align: center;
+
+}
+
+section.section-6 h2 {
+    margin: 0;
+}
+
+section.section-6 h2 span {
+    color: aqua;
+
+
+}
+
+section.section-6 p {
+    color: gray;
+    margin: 0;
+}
+
+section.section-6 .six-image {
+    padding-top: 6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem 2rem;
+    width: 100%;
+
+
+}
+
+section.section-6 .six-image .first {
+    width: 100%;
+    z-index: 0;
+
+
+}
+
+section.section-6 .six-image .first img {
+    width: 100%;
+
+
+}
+
+
+
+
+section.section-6 .six-image .first .click {
+    position: relative;
+    color: red;
+
+
+}
+
+section.section-6 .six-image .first .click a {
+    text-decoration: none;
+    color: white;
+}
+
+section.section-6 .six-image .first .click:hover {
+    background-color: rgba(aqua, .8);
+    opacity: 1;
+    cursor: pointer;
+}
+
+section.section-7 {
+    background-color: black;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 75% 90%, 0 100%);
+    margin-bottom: 4rem;
+}
+
+section.section-7 .section-7-middle .section-7-head {
+    color: white;
+    text-align: center;
+}
+
+section.section-7 .section-7-middle .section-7-head h2 {
+    margin: 0;
+}
+
+section.section-7 .section-7-middle .section-7-head span {
+    color: aqua;
+
+}
+
+section.section-7 .section-7-middle .section-7-head p {
+    color: gray;
+    padding-bottom: 3rem;
+}
+
+.section-7-middle .sev-3-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    padding-bottom: 8rem;
+
+}
+
+.sev-3-section .section-1 {
+    width: 85%;
+    background-color: white;
+    text-align: center;
+}
+
+.sev-3-section .section-1 img {
+    width: 100%;
+}
+
+.sev-3-section .section-1 h2 {
+    color: black;
+    font-size: 15px;
+}
+
+.sev-3-section .section-1 p {
+    color: gray;
+}
+
+.sev-3-section .section-1 .read-more {
+    text-align: left;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.sev-3-section .section-1 .read-more a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+section.section-8 {
+    text-align: center;
+}
+
+.section-8-middle {
+    border: 2px solid aqua;
+    padding: 0;
+    width: 80%;
+}
+
+.section-8-header h2 {
+    margin: 0;
+}
+
+.section-8-header h2 span {
+    color: aqua;
+}
+
+.section-8-header p {
+    color: gray;
+    padding-bottom: 2rem;
+}
+
+.section-8-address {
+    display: flex;
+
+    justify-content: center;
+}
+
+.section-8-address .mobile {
+    padding: 4rem;
+}
+
+.section-8-address .mobile span {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.mobile h2 {
+    margin-bottom: 0;
+}
+
+.mobile p {
+    color: gray;
+
+}
+
+.input {
+    width: 100%;
+}
+
+.name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4rem;
+    grid-column-gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.name input,
+.subject input {
+    padding: .5rem;
+}
+
+.name input:focus,
+.subject input:focus {
+    outline: none;
+}
+
+.subject {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: .5rem;
+    padding: 0 4rem;
+    grid-row-gap: 1rem;
+}
+
+.subject .massege {
+    padding: 2rem;
+}
+
+.subject .massege text {
+    margin: 0;
+}
+
+.last-button {
+    margin-top: 2rem;
+}
+
+.last-button button {
+    padding: .5rem 1rem;
+    background-color: aqua;
+    border: none;
+
+}
+
+.last-button button:hover {
+    cursor: pointer;
+    background-color: brown;
+    transition: all;
+}
+
+footer {
+    background-color: black;
+    color: whitesmoke;
+    margin-bottom: -20px;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.foot-creative span {
+    color: skyblue;
+    font-size: 2rem;
+    padding-top: 1.2rem;
+    margin: 0;
+}
+
+.foot-social span {
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+}
+
+.foot-last p {
+    color: gray;
+    padding-bottom: 1.5rem;
+}
+
+.responsive {
+    display: none;
+}
+.responsive-nav{
+    display: none;
+}
+
+/*media query*/
+@media (max-width: 768px) {
+    .middle {
+        display: none;
+    }
+
+    .responsive {
+        display: block;
+        height: 20px;
+        background-color: black;
+        border: none;
+    }
+
+    .responsive i {
+        color: aqua;
+        font-size: 30px;
+        cursor: pointer;
+        padding-top: 6px;
+    }
+
+    .box-custem figure {
+        display: none;
+
+    }
+
+    .middle-img {
+        width: 75vw;
+    }
+
+    section .about-container {}
+
+    section .about-container figure {
+        width: 60%;
+        margin-right: -18px;
+
+    }
+
+    section .about-info {
+        width: 65%;
+    }
+
+    .about-info .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+
+    }
+
+    section.services {
+
+
+        width: 100%;
+
+    }
+
+    .section-3 .provide-services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .slider-middle p {
+        width: 70vw;
+    }
+
+    .slider-middle h2 {
+        width: 70vw;
+    }
+
+    .section-8-address .mobile span {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+
+    .section-8-address .mobile h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .input {
+        margin-left: -25px;
+    }
+
+    .section-8-address .mobile p {
+        font-size: .7rem;
+        margin: 0;
+    }
+
+    .section-8-address .mobile {
+        padding: 1rem;
+    }
+
+
+    .name {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .name input {
+        width: 47vw;
+    }
+
+    .subject input {
+        width: 47vw;
+    }
+
+    .section-7-middle .sev-3-section {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+    .responsive-nav{
+    display: block;
+}
+   
+
+    #slide-down-nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        transition: top 0.5s ease;
+    }
+
+    #slide-down-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #slide-down-nav li {
+        padding: 15px;
+    }
+
+    #slide-down-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 20px;
+        transition: margin-top 0.5s ease;
+    }
+
+   
+}

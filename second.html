@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Slide Down Navigation</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        overflow: hidden;
+        /* Prevent scrolling when navigation is open */
+    }
+
+    #slide-down-nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        transition: top 0.5s ease;
+    }
+
+    #slide-down-nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    #slide-down-nav li {
+        padding: 15px;
+    }
+
+    #slide-down-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .content {
+        padding: 20px;
+        transition: margin-top 0.5s ease;
+    }
+
+    #nav-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <button id="nav-button">Toggle Navigation</button>
+    <nav id="slide-down-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content" id="content">
+        <!-- Your page content goes here -->
+    </div>
+    <script>
+        const navButton = document.getElementById('nav-button');
+        const slideDownNav = document.getElementById('slide-down-nav');
+        const content = document.getElementById('content');
+
+        navButton.addEventListener('click', function () {
+            const isNavOpen = slideDownNav.style.top === '0%';
+
+            slideDownNav.style.top = isNavOpen ? '-100%' : '0%';
+            content.style.marginTop = isNavOpen ? '0' : '80px';
+        });
+
+        document.addEventListener('click', function (event) {
+            if (!event.target.closest('#slide-down-nav') && !event.target.closest('#nav-button')) {
+                slideDownNav.style.top = '-100%';
+                content.style.marginTop = '0';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.margin-both{
+    max-width: 1200px;
+    padding: 2% 9%;
+    margin: 0 auto;
+    
+}
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+
+}
+section .align-items{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+}
+.align-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cv{
+    padding: 8px 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    border: 2px solid aqua;
+    color: aqua;
+    font-size: 20px;
+}
+.cv:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+    color: white;
+    transition: all 1s ease;
+
+}
+
